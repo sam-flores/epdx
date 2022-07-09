@@ -42,9 +42,14 @@
                     <a class="btn btn-primary" href="#!">Got an event? submit here!</a>
                 </div>
             </div>
-            <h2 class="font-weight-light text-light">today's events</h2>
-            <!-- Content Row-->
-            <div class="gx-4 gx-lg-5 d-flex flex-row overflow-auto">
+            <!-- today's events -->
+            <h2 class="font-weight-light text-light">
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapse_day" role="button" aria-expanded="false" aria-controls="collapse_day">
+                today's events
+              </a>
+            </h2>
+            <div class="collapse" id="collapse_day">
+              <div class="gx-4 gx-lg-5 d-flex flex-row overflow-auto">
                 <div class="col-md-4 mb-5">
                     <div class="card h-100 bg-dark">
                         <div class="card-body">
@@ -82,109 +87,116 @@
                           </div>
                       </div>
                 </div>
-            <h2 class="font-weight-light text-light">events by month</h2>
-            <section class="ftco-section">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">Calendar #07</h2>
+            </div>
+            <!-- this month's events -->
+            <h2 class="font-weight-light text-light">
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapse_month" role="button" aria-expanded="false" aria-controls="collapse_month">
+                events by month
+              </a>
+            </h2>
+            <div class="collapse" id="collapse_month">
+              <section class="ftco-section">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                      <h2 class="heading-section">Calendar #07</h2>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="elegant-calencar d-md-flex">
-                      <div class="wrap-header d-flex align-items-center img" style="background-image: url(assets/bg.jpg);">
-                        <p id="reset">Today</p>
-                        <div id="header" class="p-0">
-                          <!-- <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div> -->
-                          <div class="head-info">
-                            <div class="head-month"></div>
-                              <div class="head-day"></div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="elegant-calencar d-md-flex">
+                        <div class="wrap-header d-flex align-items-center img" style="background-image: url(assets/bg.jpg);">
+                          <p id="reset">Today</p>
+                          <div id="header" class="p-0">
+                            <!-- <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div> -->
+                            <div class="head-info">
+                              <div class="head-month"></div>
+                                <div class="head-day"></div>
+                            </div>
+                            <!-- <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div> -->
                           </div>
-                          <!-- <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div> -->
                         </div>
-                      </div>
-                      <div class="calendar-wrap">
-                        <div class="w-100 button-wrap">
-                          <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
-                          <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div>
-                        </div>
-                        <table id="calendar">
-                          <thead>
+                        <div class="calendar-wrap">
+                          <div class="w-100 button-wrap">
+                            <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
+                            <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div>
+                          </div>
+                          <table id="calendar">
+                            <thead>
+                                <tr>
+                                  <th>Sun</th>
+                                  <th>Mon</th>
+                                  <th>Tue</th>
+                                  <th>Wed</th>
+                                  <th>Thu</th>
+                                  <th>Fri</th>
+                                  <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
                               <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                               </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-
+              </section>
+            </div>
             <script src="js/jquery.min.js"></script>
             <script src="js/popper.js"></script>
             <script src="js/bootstrap.min.js"></script>
