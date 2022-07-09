@@ -10,6 +10,11 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .card-body {
+    min-height: 300px !important;
+    min-width: 300px !important;
+    margin-right: 5px !important;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
