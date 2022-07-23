@@ -33,7 +33,8 @@ $( document ).ready(function() {
       // loop through days of week
       $.each(days, function (index, value) {
         // loop through flyers for day
-        $.each(flyers, function (index, value) {
+        src = '<div style="color: white; font-size: 32px;">day'+indexx+index+'</div>';
+        $.each(flyers, function (flyer, val) {
           src +='<div class="col-md-4 mb-5"><div class="card h-100 bg-dark"><div class="card-body"><img class="img-fluid rounded mb-4 mb-lg-0" src="./assets/epdx_logo.png" alt="..." /><h2 class="card-title text-light">GAY BEHAVIOR: DJ SOUP and EMOJI HEAP</h2><p class="card-text text-success">gay people. gay music. all you need for your queer desires.</p></div><div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">more info</a><a class="btn btn-primary btn-sm" href="#!">save event</a></div></div></div>';
         });
         // add flyers to day
@@ -65,7 +66,7 @@ $( document ).ready(function() {
       // scroll to flyers animation
       $("#day" + e.target.id).toggle();
         $([document.documentElement, document.body]).animate({
-          scrollTop: $("#day"+e.target.id).offset().top
+          scrollTop: $("#week"+e.target.id.substring(0, 1)).offset().top
         }, 15);
       }
     });
