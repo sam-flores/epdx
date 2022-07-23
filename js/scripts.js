@@ -4,7 +4,6 @@ $( document ).ready(function() {
     var src = "";
     var weeks = ["one", "two", "three", "four"];
     var days = ["one", "two", "three", "four", "five", "six", "seven"];
-    var indexx = 0;
     // loop through weeks
     $.each(weeks, function (indexx, valuee) {
 
@@ -36,24 +35,32 @@ $( document ).ready(function() {
       });
     });
 
-    // hide all days except for selected
+    // hide all day divs except for selected
     // hide current day if visible and clicked
     $("#collapse_month").click(function(e) {
-        console.log("#day" + e.target.id);
-        if($("#day" + e.target.id).is(":visible")){
-          $("#day" + e.target.id).hide();
-        }else{
+      // come back to month view
+      if($("#day" + e.target.id).is(":visible")){
+        $("#day" + e.target.id).hide();
+        // show all previously hidden weeks
         $.each(weeks, function (indexx, valuee) {
-          $.each(days, function (index, value) {
-            $("#day" + indexx+index).hide();
-          });
+          $("#week" + indexx).show();
         });
-        // scroll to flyers animation
-        $("#day" + e.target.id).toggle();
-          $([document.documentElement, document.body]).animate({
-            scrollTop: $("#day"+e.target.id).offset().top
-          }, 15);
-        }
+      }
+      // shift to week view
+      else{
+      $.each(weeks, function (indexx, valuee) {
+        // hide all weeks except for selected
+        if(indexx.toString() != e.target.id.substring(0,1)) $("#week" + indexx).hide();
+        $.each(days, function (index, value) {
+          $("#day" + indexx+index).hide();
+        });
       });
+      // scroll to flyers animation
+      $("#day" + e.target.id).toggle();
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#day"+e.target.id).offset().top
+        }, 15);
+      }
+    });
 
 });
