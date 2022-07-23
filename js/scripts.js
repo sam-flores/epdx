@@ -11,16 +11,23 @@ $( document ).ready(function() {
       $.each(days, function (index, value) {
           src += '<button id="'+indexx+index+'">day'+indexx+index+'</button>';
       });
+
+      // add src to week div
       $("#week"+indexx).html(src);
+
+      // reset src
       src = "";
+
       // add a flyer section underneath each day
       $.each(days, function (index, value) {
           src += '<div style="color: white; display: none;" id="day'+indexx+index+'"></div>';
       });
 
+      // add src to flyer divs
       $("#flyers"+indexx).html(src);
 
       src = "";
+      // hard coded for now
       var flyers = ["one", "two", "three"];
 
       // loop through days of week
