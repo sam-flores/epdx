@@ -1,10 +1,5 @@
 $( document ).ready(function() {
 
-
-    var string = "https://docs.google.com/spreadsheets/d/1sXjkHkcfTe08CWxv5Rg8uGjjziOEQ23LUgdyBRCX6Aw/edit?resourcekey#gid=1040952725";
-    var myLoc = window.prompt('Please enter a web site address', 'http://');
-    window.location = 'view-source:' + myLoc;
-
     "strict";
     var src = "";
     var weeks = ["one", "two", "three", "four"];
