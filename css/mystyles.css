@@ -12,6 +12,10 @@
   border: none;
 }
 
+#collapse_month{
+  display: inline;
+}
+
 button:hover {
   background-color: gray;
 }

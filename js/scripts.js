@@ -107,6 +107,7 @@ $( document ).ready(function() {
       for(var week = 0; week < 5; week++){
         // hide all weeks except for selected
         if(week != selected_week) $("#week" + week).hide();
+
         for(var day = 0; day < 7; day++){
           index = week*7 + day;
           $("#day" + index).hide();
