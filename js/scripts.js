@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
       // loop through days
       $.each(days, function (index, value) {
-          src += '<button id="'+week+index+'">day'+week+index+'</button>';
+          src += '<button class="calendar_days" id="'+week+index+'">day'+week+index+'</button>';
       });
 
       // add src to week div
