@@ -9,7 +9,7 @@
   width: 12vw;
   font-size: 16px;
   padding: 8px;
-  border: solid lime;
+  border: none;
 }
 
 button:hover {
@@ -19,4 +19,8 @@ button:hover {
 button:focus {
   background-color: lime;
   color: black;
+}
+
+#day_words > button{
+  border-bottom: solid lime !important;
 }
