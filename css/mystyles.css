@@ -6,9 +6,17 @@
 .calendar_button{
   background-color: black;
   color: white;
-  width: 32px;
-  height: 32px;
+  width: 12vw;
   font-size: 16px;
   padding: 8px;
-  border: none;
+  border: solid lime;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+button:focus {
+  background-color: lime;
+  color: black;
 }
