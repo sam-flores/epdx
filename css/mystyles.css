@@ -22,6 +22,9 @@ button:focus {
   color: black;
 }
 
+.submit_button{
+  background-color: white;
+}
 #day_words > button{
   border-bottom: solid lime !important;
 }
